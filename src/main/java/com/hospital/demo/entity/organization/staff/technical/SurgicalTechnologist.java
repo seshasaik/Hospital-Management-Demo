@@ -7,8 +7,10 @@ import com.hospital.demo.entity.organization.Department;
 import com.hospital.demo.util.Gender;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class SurgicalTechnologist extends Technologist {
 
 	public SurgicalTechnologist(String title, String givenName, String middleName, String familyName,

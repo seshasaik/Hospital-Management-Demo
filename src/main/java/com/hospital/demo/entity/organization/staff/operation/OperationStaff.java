@@ -5,8 +5,13 @@ import java.util.List;
 
 import com.hospital.demo.entity.organization.Department;
 import com.hospital.demo.entity.organization.staff.Staff;
+import com.hospital.demo.entity.organization.staff.technical.SurgicalTechnologist;
 import com.hospital.demo.util.Gender;
 
+import lombok.EqualsAndHashCode;
+
+
+@EqualsAndHashCode(callSuper = true)
 public abstract class OperationStaff extends Staff {
 
 	public OperationStaff(String title, String givenName, String middleName, String familyName, LocalDate birthDate,

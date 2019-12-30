@@ -9,7 +9,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@AllArgsConstructor()
+@AllArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 public abstract class Person {
 
@@ -19,7 +19,7 @@ public abstract class Person {
 	private String familyName;
 	private LocalDate birthDate;
 	private Gender gender;
-	
+
 	@EqualsAndHashCode.Include
 	private String phone;
 

@@ -7,9 +7,7 @@ import com.hospital.demo.entity.organization.Department;
 import com.hospital.demo.entity.organization.staff.Staff;
 import com.hospital.demo.util.Gender;
 
-import lombok.Data;
 
-@Data
 public abstract class TechnicalStaff extends Staff {
 
 	public TechnicalStaff(String title, String givenName, String middleName, String familyName, LocalDate birthDate,

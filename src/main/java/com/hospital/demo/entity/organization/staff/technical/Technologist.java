@@ -6,9 +6,6 @@ import java.util.List;
 import com.hospital.demo.entity.organization.Department;
 import com.hospital.demo.util.Gender;
 
-import lombok.Data;
-
-@Data
 public class Technologist extends TechnicalStaff {
 
 	public Technologist(String title, String givenName, String middleName, String familyName, LocalDate birthDate,

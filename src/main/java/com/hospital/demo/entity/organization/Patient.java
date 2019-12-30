@@ -6,11 +6,11 @@ import org.springframework.data.annotation.Transient;
 
 import com.hospital.demo.util.Gender;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Patient extends Person {
 
 	private String id;

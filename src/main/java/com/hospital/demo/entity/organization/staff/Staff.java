@@ -10,8 +10,10 @@ import com.hospital.demo.entity.organization.Person;
 import com.hospital.demo.util.Gender;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public abstract class Staff extends Person {
 	private LocalDate joined;
 	private List<String> education;

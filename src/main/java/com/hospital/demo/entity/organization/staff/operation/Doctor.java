@@ -4,11 +4,14 @@ import java.time.LocalDate;
 import java.util.List;
 
 import com.hospital.demo.entity.organization.Department;
+import com.hospital.demo.entity.organization.staff.technical.SurgicalTechnologist;
 import com.hospital.demo.util.Gender;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class Doctor extends OperationStaff {
 
 	private String specality[];

@@ -8,8 +8,10 @@ import com.hospital.demo.entity.organization.staff.Staff;
 import com.hospital.demo.util.Gender;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 public abstract class AdministrativeStaff extends Staff {
 
 	public AdministrativeStaff(String title, String givenName, String middleName, String familyName,

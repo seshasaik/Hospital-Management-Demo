@@ -6,9 +6,6 @@ import java.util.List;
 import com.hospital.demo.entity.organization.Department;
 import com.hospital.demo.util.Gender;
 
-import lombok.Data;
-
-@Data
 public class FrontDeskStaff extends AdministrativeStaff {
 
 	public FrontDeskStaff(String title, String givenName, String middleName, String familyName, LocalDate birthDate,
