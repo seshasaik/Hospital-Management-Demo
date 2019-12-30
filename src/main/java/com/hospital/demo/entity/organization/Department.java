@@ -12,5 +12,4 @@ public class Department {
 	private String name;
 	private String deptCode;
 
-	private Hospital hospital;
 }

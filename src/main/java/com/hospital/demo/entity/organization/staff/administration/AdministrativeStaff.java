@@ -14,12 +14,14 @@ import lombok.EqualsAndHashCode;
 @EqualsAndHashCode(callSuper = true)
 public abstract class AdministrativeStaff extends Staff {
 
+	private AdministariveStaffType staffType;
+
 	public AdministrativeStaff(String title, String givenName, String middleName, String familyName,
 			LocalDate birthDate, Gender gender, String phone, String uniqueId, LocalDate joined, List<String> education,
-			List<String> languages, Department department) {
+			List<String> languages, Department department, AdministariveStaffType staffType) {
 		super(title, givenName, middleName, familyName, birthDate, gender, phone, uniqueId, joined, education,
 				languages, department);
-		// TODO Auto-generated constructor stub
+		this.staffType = staffType;
 	}
 
 }

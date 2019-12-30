@@ -10,9 +10,9 @@ public class FrontDeskStaff extends AdministrativeStaff {
 
 	public FrontDeskStaff(String title, String givenName, String middleName, String familyName, LocalDate birthDate,
 			Gender gender, String phone, String uniqueId, LocalDate joined, List<String> education,
-			List<String> languages, Department department) {
+			List<String> languages, Department department, AdministariveStaffType staffType) {
 		super(title, givenName, middleName, familyName, birthDate, gender, phone, uniqueId, joined, education,
-				languages, department);
+				languages, department, staffType);
 		// TODO Auto-generated constructor stub
 	}
 
